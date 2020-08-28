@@ -1,0 +1,86 @@
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+html, body {
+    height: 100%;
+    font: 14px Roboto, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    flex: 1 0 auto;
+    margin: auto;
+    width: 90%;
+}
+
+.login-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 50px;
+    top: 50%;
+    margin: auto;
+}
+
+.student-rules {
+    border-top: 2px solid #f4f3ef;
+    border-bottom: 2px solid #f4f3ef;
+    height: 15em;
+    width: 400px;
+}
+
+.rules-text {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Lucida Console', monospace;
+    width: 400px;
+}
+
+.activity-instructions {
+    border: 1px solid;
+    border-radius: 1em;
+}
+
+.study-media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 500px);
+    grid-template-rows: min-content;
+    grid-gap: 15px;
+  }
+
+.study-media-box {
+    background-color: #f4f3ef;
+    padding: 0.75em;
+    border-radius: 1em;
+    width: 500px;
+}
+
+.study-media-name {
+    text-align: center;
+}
+
+.study-video {
+    border-radius: 0.75em;
+    width: 480px;
+    height: 270px;
+}
+
+.study-description {
+    text-align: left;
+}
+
+footer {
+    flex-shrink: 0;
+}
